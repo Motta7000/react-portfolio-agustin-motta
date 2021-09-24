@@ -9,10 +9,10 @@ function Topbar() {
             <div className={"topbar " + ((menuOpen) ? "active" : "")}>
                 <div className="wrapper" >
                     <div className="left">
-                        <a href="#intro" className="logo">genius.</a>
+                        <a href="#intro" className="logo">Hello!</a>
                         <div className="itemContainer">
                             <Mail className="icon" />
-                            <span>+5491112121</span>
+                            <span>+5491154629170</span>
                         </div>
 
                         <div className="itemContainer">

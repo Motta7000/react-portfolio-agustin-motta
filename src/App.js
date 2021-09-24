@@ -2,7 +2,6 @@ import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/intro"
 import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
-import Testimonials from "./components/testimonials/Testimonials"
 import Contact from "./components/contact/Contact"
 import "./App.scss"
 import Menu from "./components/menu/menu"
