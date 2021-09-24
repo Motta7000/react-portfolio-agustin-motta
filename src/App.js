@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Topbar from "./components/topbar/Topbar";
+import Intro from "./components/intro/intro"
+import Portfolio from "./components/portfolio/Portfolio";
+import Works from "./components/works/Works";
+import Testimonials from "./components/testimonials/Testimonials"
+import Contact from "./components/contact/Contact"
+import "./App.scss"
+import Menu from "./components/menu/menu"
+import Helmet from 'react-helmet'
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" id="App">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Agustín Fabio,Motta</title>
+    </Helmet>
+        <Topbar />
+        <Menu/>
+        <div className="sections">
+          <Intro className="inside-section"/>
+          <Portfolio  className="inside-section"/>
+          <Works  className="inside-section"/>
+          
+          <Contact  className="inside-section"/>
+        </div>
     </div>
   );
 }

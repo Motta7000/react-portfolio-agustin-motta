@@ -1,0 +1,172 @@
+.Works{
+    background-color: crimson;
+    display:flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    overflow-x:inherit;
+    position:relative;
+    padding-top: 70px;
+    overflow-y:hidden;
+    .arrow{
+        height: 50px;
+        position:absolute;
+        cursor:pointer;
+        @media (max-width:1000px){
+            display:none;
+        }
+        &.left{
+            left:100px;
+            transform:rotate(-180deg)
+        }
+        &.right{
+            right:100px;
+          
+        }
+    }
+    .slider{
+        justify-content:center;
+       
+        height: 350px;
+        display:flex;
+        position:absolute;
+        left:0;
+        transition: 1s ease;
+
+        @media (max-width:1004px){
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            transform: translateX(0vw);
+        }
+   
+        .container{
+            width: 100vw;
+          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-height:824px){
+                height: 27%;
+                margin-top:2px ;
+                 
+             }
+            .item{
+     
+                width: 700px;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                display:flex;
+                justify-content: center;
+                z-index: 1;
+                overflow:hidden;
+                @media (max-width:1004px){
+                    height: 240px;
+                    margin-top: 20px;
+                    width: 90%;
+                    margin-bottom: 10px;
+                }
+                @media (max-height:824px){
+                    margin: 0px;
+                    height: 100%;
+                }
+           
+                .left{
+                    flex:5;
+                    height: 100%;
+                    width: 100%;
+                   margin-left: 20px;
+                    display: flex;
+                    align-items: center;
+                    .leftContainer{
+                        height: 100%;
+                        display:flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        .imgContainer{
+                            @media (max-width:1004px){
+
+                                display:none;
+                            }
+                           .img{
+                
+                           }
+             
+                        }     
+                        h4{
+                    
+                            a{
+                               
+                                color:black;
+                            }
+                        }
+                        h1{
+                            
+                            @media (max-height:824px){
+                                //font-size: 20px;
+                               
+                            }
+                            @media (max-width:800px) {
+                                font-size: 4.2vw;
+                            }
+                        }
+                        p{
+                            @media (max-height:824px){
+                                font-size: 12px;
+                            }
+                            @media (max-width:800px){
+                                font-size: 3.3vw;
+                                
+                            }
+                        }
+                    }
+                    .text{
+                        margin-top:5px;
+                        @media (max-height:824px){
+                            
+                        }
+          
+                    }
+                        .imgContainer{
+                            height: 30%;
+                            width: 20%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 70%;
+                         
+                          
+                           // border:2px solid black;
+                            img{
+                                height: 80%;
+                                width: 100%;
+                                object-fit:contain;
+                                
+        
+                        }
+                    }
+                }
+                .right{
+                    flex:7;
+                    height: 100%;
+                    overflow:hidden;
+                    position:relative;
+                    .imgContainer{
+                        height:500px;
+                        width: 500px;
+                        
+                        overflow:hidden;
+                        transform:rotate(-10deg) translate(50px,-39px);
+                        img{
+                          overflow:hidden;
+                            width: 400px;
+                            position:absolute;
+                            object-fit:cover;
+                        }     
+                    } 
+                }
+            }
+        }
+    }
+    
+}
