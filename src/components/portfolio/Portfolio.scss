@@ -64,7 +64,7 @@
             align-items: center;
             margin:10px 20px;
             width: 80%;
-            height: 55%;
+            height: 80%;
             flex:1;
             
             transition: all 1s ease;
@@ -74,6 +74,15 @@
             @media (max-width:1409px){
                 margin:5px 10px;
                 height: 25%;
+                width: 24%;
+                //width: 70%;   
+                //height: 30%;
+                
+            }
+            @media (max-width:700px){
+                margin:5px 10px;
+                height: 25%;
+                width: 74%;
                 //width: 70%;   
                 //height: 30%;
                 
